@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Navbar from "./components/nav/Navbar";
+import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
-	return <div className="App">Hello Code Buddy</div>;
+	return (
+		<>
+			<Navbar />
+			<Sidebar />
+		</>
+	);
 }
 
 export default App;
