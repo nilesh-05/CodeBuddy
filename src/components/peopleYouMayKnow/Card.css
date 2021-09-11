@@ -1,0 +1,39 @@
+.top{
+    display: flex;
+justify-content: space-around;
+border-radius: 15px;
+}
+
+.img-sec{
+
+}
+
+figure{
+height: 80px;
+width: 80px;
+border-radius: 50%;
+border: 2px solid black;
+margin: auto 2px;
+}
+.info_sec{
+    display: flex;
+}
+
+.name figcaption{
+    font-size: 0.8rem;
+transform: translateY(-50%);
+}
+.name h3{
+    font-weight: bolder;
+
+}
+.skills figcaption{
+    transform: translateY(-50%);
+}
+
+.sills{
+
+}
+.view_sec{
+    justify-content: space-around !important;
+}

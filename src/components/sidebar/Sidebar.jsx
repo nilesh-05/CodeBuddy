@@ -40,3 +40,41 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
+//yeh navlink ke sath h isko krlena jb pages bnjaenge
+
+{/* <div
+			className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
+			style={{ width: "260px", height: "100vh", overflow: "none"}}
+		>
+
+			<ul className="nav nav-pills flex-column mb-auto">
+				<li className="nav-item">
+					<NavLink to="#" className="nav-link " aria-current="page">
+						My Profile
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="#" className="nav-link text-white">
+						Network
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="#" className="nav-link text-white">
+						Requests
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="#" className="nav-link text-white">
+						Chats
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="#" className="nav-link text-white">
+						Settings
+					</NavLink>
+				</li>
+			</ul>
+			<hr />
+		</div> */}
