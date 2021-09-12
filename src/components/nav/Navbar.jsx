@@ -4,10 +4,17 @@ const Navbar = () => {
 	return (
 		<nav class="navbar navbar-dark bg-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand"> <span className="text-danger" 
-				style={{fontFamily:"cursive"}}>
-					C
-				</span>ode<span className="text-danger" style={{fontFamily:"cursive"}}>B</span>uddy</a>
+				<a class="navbar-brand">
+					{" "}
+					<span className="text-danger" style={{ fontFamily: "cursive" }}>
+						C
+					</span>
+					ode
+					<span className="text-danger" style={{ fontFamily: "cursive" }}>
+						B
+					</span>
+					uddy
+				</a>
 				<form class="d-flex">
 					<input
 						class="form-control me-2"
@@ -18,7 +25,6 @@ const Navbar = () => {
 					<button class="btn btn-outline-success" type="submit">
 						Search
 					</button>
-					
 				</form>
 			</div>
 		</nav>

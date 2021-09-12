@@ -41,10 +41,10 @@ const Sidebar = () => {
 
 export default Sidebar;
 
-
 //yeh navlink ke sath h isko krlena jb pages bnjaenge
 
-{/* <div
+//{
+/* <div
 			className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
 			style={{ width: "260px", height: "100vh", overflow: "none"}}
 		>
@@ -77,4 +77,5 @@ export default Sidebar;
 				</li>
 			</ul>
 			<hr />
-		</div> */}
+		</div> */
+//}
