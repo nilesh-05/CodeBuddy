@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/nav/Navbar";
-import Sidebar from "./components/sidebar/Sidebar";
+// import Sidebar from "./components/sidebar/Sidebar";
+import Header from "./components/header/header";
 import Home from "./components/Home";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
@@ -17,7 +18,7 @@ function App() {
 				<Route path="/home">
 					<Navbar />
 					<div className="d-flex">
-						<Sidebar />
+						<Header />
 						<Home />
 					</div>
 				</Route>

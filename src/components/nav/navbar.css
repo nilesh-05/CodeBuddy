@@ -1,8 +1,33 @@
 .navbar-brand {
-	font-size: 1.8rem;
-	font-weight: 400;
-	color: yellow !important;
-	padding-left: 30px;
-	letter-spacing: 3px !important;
-cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: yellow !important;
+  padding-left: 30px;
+  letter-spacing: 3px !important;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 950px;
+  height: 45px;
+  position: relative;
+  padding-top: 8px;
+  padding-left: 13px;
+}
+
+.round-button{
+  padding: 10px;
+  margin: 10px;
+  display:block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+.vl {
+  margin-left: 50px;
+  margin-right: 40px;
+  border-left: 6px solid greenyellow;
+  height: 40px;
 }
