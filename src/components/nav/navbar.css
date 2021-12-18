@@ -15,10 +15,10 @@
   padding-left: 13px;
 }
 
-.round-button{
+.round-button {
   padding: 10px;
   margin: 10px;
-  display:block;
+  display: block;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -26,8 +26,11 @@
 }
 
 .vl {
-  margin-left: 50px;
-  margin-right: 40px;
-  border-left: 6px solid greenyellow;
+  margin-left: 30px;
+  margin-right: 20px;
+  /* border-left: 6px solid greenyellow; */
   height: 40px;
+}
+.name {
+  color: white;
 }
