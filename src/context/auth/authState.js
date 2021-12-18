@@ -140,6 +140,7 @@ const AuthState = (props) => {
         loading: state.loading,
         user: state.user,
         error: state.error,
+        pymk: state.pymk,
         register,
         loadUser,
         login,
