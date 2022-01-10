@@ -8,8 +8,8 @@ const FriendMain = () => {
   return (
     <div className='friends-main'>
       <h3 className='text-center mt-3 heading'>Friends</h3>
-      {console.log('PYMK = ', pymk)}
-      {console.log('USER = ', user)}
+      {/* {console.log('PYMK = ', pymk)} */}
+      {/* {console.log('USER = ', user)} */}
       {user?.friends.map((item) => {
         return <Friend name={item.name} />;
       })}
