@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* <button className="round-button">
 				<FaUserFriends />
 			</button> */}
-      <DropDown icon='AiOutlineUsergroupAdd' />
+      <DropDown icon='AiOutlineUsergroupAdd' requests={user?.pendingRequests} />
       <Incoming
         icon='AiOutlineUsergroupAdd'
         requests={user?.recievedRequests}
