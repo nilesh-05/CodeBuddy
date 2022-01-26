@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Card.css';
+import AuthContext from '../../context/auth/authContext';
+import axios from 'axios';
+
 const Card = (props) => {
+  // console.log('CARDITEM = ', props.name);
+
+  const authContext = useContext(AuthContext);
+  const { user, loadUser } = authContext;
+
+  const config = {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    me: user?.email,
+    newFriend: props.name?.email,
+  };
+
+  const sendRequest = async () => {
+    console.log('Sent');
+    const res = await axios.post(
+      'http://localhost:5000/api/friends/send',
+      config
+    );
+    console.log('Result = ', res);
+  };
+
   return (
     <>
       <div className='d-flex bg-light my-4 top'>
@@ -10,7 +35,7 @@ const Card = (props) => {
         <hr />
         <div className='info_sec py-3 d-flex flex-column'>
           <div className='name'>
-            <h3>{props.name}</h3>
+            <h3 style={{ color: 'black' }}>{props.name?.name}</h3>
             <figcaption className='mt-n-3'>helloWorld.com</figcaption>
           </div>
           <div className='skills mt-3 mx-1'>
@@ -20,7 +45,9 @@ const Card = (props) => {
         </div>
         <div className='view_sec d-flex flex-column'>
           <button className='btn btn-lg btn-success'>ViewProfile</button>
-          <button className='btn btn-lg btn-success'>Add Friend</button>
+          <button onClick={sendRequest} className='btn btn-lg btn-success'>
+            Add Friend
+          </button>
         </div>
       </div>
     </>

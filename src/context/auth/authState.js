@@ -36,6 +36,7 @@ const AuthState = (props) => {
     }
 
     try {
+      getUsers();
       console.log('USER =');
       const res = await axios.get('http://localhost:5000/api/auth');
       console.log(res);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/nav/Navbar';
@@ -7,7 +7,17 @@ import Header from './components/header/header';
 import Home from './components/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import AuthContext from './context/auth/authContext';
+import { useContext } from 'react';
+
 function App() {
+  const authContext = useContext(AuthContext);
+  const { user, loadUser } = authContext;
+
+  // useEffect(() => {
+  //   loadUser();
+  // }, []);
+
   return (
     <Router>
       <Switch>

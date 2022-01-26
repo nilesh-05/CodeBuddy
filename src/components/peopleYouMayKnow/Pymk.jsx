@@ -13,8 +13,8 @@ const Pymk = () => {
       <h3>People You May Know</h3>
       {/* {console.log('PEOPLE = ', pymk)} */}
       {pymk?.map((item) => {
-        // console.log('Hi');
-        return <Card name={item.name} />;
+        // console.log('ITEM1 = ', item);
+        return <Card name={item} />;
       })}
       <Card name='Navjot' />
     </div>
