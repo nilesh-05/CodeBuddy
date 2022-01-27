@@ -22,7 +22,7 @@ const DropDown = ({ icon, requests }) => {
           <div className='inline-req'>
             <h5>hello</h5>
             <div className='icons'>
-              <AiOutlineCheck style={{ margin: '10px' }} />
+              {/* <AiOutlineCheck style={{ margin: '10px' }} /> */}
               <AiOutlineClose style={{ margin: '10px' }} />
             </div>
           </div>

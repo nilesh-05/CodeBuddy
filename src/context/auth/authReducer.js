@@ -42,6 +42,7 @@ export default (state, action) => {
         loading: false,
         user: null,
         error: action.payload,
+        pymk: null,
       };
 
     case CLEAR_ERRORS:

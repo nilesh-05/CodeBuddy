@@ -24,6 +24,7 @@ const Card = (props) => {
       config
     );
     console.log('Result = ', res);
+    loadUser();
   };
 
   return (

@@ -51,7 +51,14 @@ function IncomingItem({ email }) {
     loadUser();
   };
 
-  const rejectRequest = () => {};
+  const rejectRequest = async () => {
+    const res = await axios.post(
+      'http://localhost:5000/api/friends/reject',
+      config
+    );
+    console.log('rejected = ', res);
+    loadUser();
+  };
 
   return (
     <div className='inline-req'>
